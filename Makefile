@@ -1,5 +1,5 @@
 
-all: pull source
+all: pull source update
 
 source:
 cp ~/.dotfiles/.aliases ~/.aliases
@@ -9,6 +9,10 @@ cp ~/.dotfiles/.bash_profile ~/.bash_profile
 
 pull:
 git pull
+
+update:
+antigen selfupdate
+antigen update
 
 antigen:
 git clone https://github.com/zsh-users/antigen.git
