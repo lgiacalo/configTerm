@@ -2,19 +2,19 @@
 all: pull source update
 
 source:
-cp ~/.dotfiles/.aliases ~/.aliases
-cp ~/.dotfiles/.zshrc ~/.zshrc
-cp ~/.dotfiles/.bashrc ~/.bashrc
-cp ~/.dotfiles/.bash_profile ~/.bash_profile
+	cp ~/.dotfiles/.aliases ~/.aliases
+	cp ~/.dotfiles/.zshrc ~/.zshrc
+	cp ~/.dotfiles/.bashrc ~/.bashrc
+	cp ~/.dotfiles/.bash_profile ~/.bash_profile
 
 pull:
-git pull
+	git pull
 
 update:
-antigen selfupdate
-antigen update
+	antigen selfupdate
+	antigen update
 
 antigen:
-git clone https://github.com/zsh-users/antigen.git
+	git clone https://github.com/zsh-users/antigen.git
 
 install: antigen source
