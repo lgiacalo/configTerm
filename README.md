@@ -1,1 +1,3 @@
 # configTerm
+
+- dossier ".dotfiles"

@@ -19,8 +19,11 @@ antigen bundle git
 # Explain how to install missing binary
 antigen bundle command-not-found
 
+# Install taskwarrior
+antigen bundle taskwarrior
+
 # Chuck Norris facts on demand
-antigen bundle chucknorris
+# antigen bundle chucknorris
 
 # Colorization for cat
 antigen bundle colorize
